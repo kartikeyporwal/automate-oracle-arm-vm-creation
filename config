@@ -1,0 +1,6 @@
+[DEFAULT]
+user=ocid1.user.oc1..aaaaaaaa3aaaaaaaaaaaaaa
+fingerprint=d4:1c:27:96:31:dg:32:jd:c8:f4:6d:13:4c:0b:93:41
+tenancy=ocid1.tenancy.oc1..aaaaaaaataaaaaaaaaa
+region=us-sanjose-1
+key_file=./oracleidentitycloudservice_kartikeyporwal-00-00-00-00.pem

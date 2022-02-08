@@ -1,0 +1,49 @@
+{
+    "metadata": {
+        "ssh_authorized_keys": "ssh-rsa rsdfhgdfadfghdghjfdgsatyghjandsomemorestring ssh-key-2019-01-00"
+    },
+    "shape": "VM.Standard.A1.Flex",
+    "compartmentId": "ocid1.tenancy.oc1..aaaaaaaataaaaaaaaaaaaa",
+    "displayName": "instance-00000000-1634",
+    "availabilityDomain": "HIsu:US-SANJOSE-1-AD-1",
+    "sourceDetails": {
+        "sourceType": "image",
+        "imageId": "ocid1.image.oc1.us-sanjose-1.aaaaaaaacdzh2e4tcrxowru2ygh62eiqp4iu2q2io3ippaqdtxks2ojtw5uq"
+    },
+    "isPvEncryptionInTransitEnabled": true,
+    "createVnicDetails": {
+        "assignPublicIp": true,
+        "subnetId": "ocid1.subnet.oc1.us-sanjose-1.aaaaaaaaraaaaaaaaaaaaa",
+        "assignPrivateDnsRecord": true
+    },
+    "agentConfig": {
+        "pluginsConfig": [
+            {
+                "name": "Vulnerability Scanning",
+                "desiredState": "DISABLED"
+            },
+            {
+                "name": "Compute Instance Monitoring",
+                "desiredState": "ENABLED"
+            },
+            {
+                "name": "Bastion",
+                "desiredState": "DISABLED"
+            }
+        ],
+        "isMonitoringDisabled": false,
+        "isManagementDisabled": false
+    },
+    "definedTags": {},
+    "freeformTags": {},
+    "instanceOptions": {
+        "areLegacyImdsEndpointsDisabled": false
+    },
+    "availabilityConfig": {
+        "recoveryAction": "RESTORE_INSTANCE"
+    },
+    "shapeConfig": {
+        "ocpus": 4,
+        "memoryInGBs": 24
+    }
+}

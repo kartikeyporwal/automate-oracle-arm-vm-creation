@@ -1,0 +1,20 @@
+curl 'https://iaas.us-sanjose-1.oraclecloud.com/20160918/instances/' \
+  -H 'Connection: keep-alive' \
+  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"' \
+  -H 'opc-request-id: sdasdsdsds/221e985255bb411d908faae4420e8706' \
+  -H 'accept-language: en' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'authorization: Signature keyId="ST$..-BGIjoKQ",version="1",algorithm="rsa-sha256",headers="(request-target) host content-length accept-language content-type opc-request-id x-content-sha256 x-date",signature="dfgfgfd+dfgeger+qwdqwd+dasfsdgfds+gfsdgdfggfd+dsfdsfdf=="' \
+  -H 'Content-Type: application/json' \
+  -H 'x-content-sha256: h+sfdsdgfdg/gsdgsdg=' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36' \
+  -H 'x-date: Sun, 06 Feb 2022 11:05:19 GMT' \
+  -H 'sec-ch-ua-platform: "Linux"' \
+  -H 'Accept: */*' \
+  -H 'Origin: https://compute.plugins.oci.oraclecloud.com' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Referer: https://compute.plugins.oci.oraclecloud.com/' \
+  --data-raw '{"metadata":{"ssh_authorized_keys":"ssh-rsa rsdfhgdfadfghdghjfdgsatyghjandsomemorestring ssh-key-2019-01-00"},"shape":"VM.Standard.A1.Flex","compartmentId":"ocid1.tenancy.oc1..aaaaaaaaaa","displayName":"instance-00000000-0000","availabilityDomain":"HIsu:US-SANJOSE-1-AD-1","sourceDetails":{"sourceType":"image","imageId":"ocid1.image.oc1.us-sanjose-1.aaaaaaaacdzh2e4tcrxowru2ygh62eiqp4iu2q2io3ippaqdtxks2ojtw5uq"},"isPvEncryptionInTransitEnabled":true,"createVnicDetails":{"assignPublicIp":true,"subnetId":"ocid1.subnet.oc1.us-sanjose-1.aaaaaaaar2piebsjadsasdsdswa","assignPrivateDnsRecord":true},"agentConfig":{"pluginsConfig":[{"name":"Vulnerability Scanning","desiredState":"DISABLED"},{"name":"Compute Instance Monitoring","desiredState":"ENABLED"},{"name":"Bastion","desiredState":"DISABLED"}],"isMonitoringDisabled":false,"isManagementDisabled":false},"definedTags":{},"freeformTags":{},"instanceOptions":{"areLegacyImdsEndpointsDisabled":false},"availabilityConfig":{"recoveryAction":"RESTORE_INSTANCE"},"shapeConfig":{"ocpus":4,"memoryInGBs":24}}' \
+  --compressed
