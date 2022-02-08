@@ -1,6 +1,6 @@
 # Steps/Resources to automate the creation of the ARM VM instance on the Oracle OCI
 
-This repo helps to automate the creation of the ARM instance on the Oracle Cloud
+This repo helps to automate the creation of the ARM instance on the Oracle Cloud and handles `Out of host capacity.` error.
 
 ## Resources
 
