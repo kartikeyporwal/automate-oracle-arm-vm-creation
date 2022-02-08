@@ -1,4 +1,4 @@
-# Steps/Resources to automate the creation of the ARM VM instance on the oracle OCI
+# Steps/Resources to automate the creation of the ARM VM instance on the Oracle OCI
 
 This repo helps to automate the creation of the ARM instance on the Oracle Cloud
 
@@ -210,6 +210,24 @@ cat /home/ubuntu/.oci/oci-arm-host-capacity/oci.log
 ```bash
 
 scp -i ssh-key-2000-01-01_ubuntu@150.90.23.6.key ubuntu@150.90.23.6:/home/ubuntu/.oci/oci-arm-host-capacity/oci.log oci.log
+
+
+```
+
+
+- Remove the CRON job entry
+
+```bash
+
+crontab -e
+
+Add comment before the command
+
+* * * * * /usr/bin/php /home/ubuntu/.oci/oci-arm-host-capacity/index.php >> /home/ubuntu/.oci/oci-arm-host-capacity/oci.log
+
+to
+
+# * * * * * /usr/bin/php /home/ubuntu/.oci/oci-arm-host-capacity/index.php >> /home/ubuntu/.oci/oci-arm-host-capacity/oci.log
 
 
 ```
